@@ -1,8 +1,9 @@
-def isPalindrome (n):
-    s = str(n)
-    reverseString = ""
-    for i in range (len(s) - 1, -1, -1):
-        reverseString += s[i]
-    return reverseString == s
-def findLargestPalindrome():
-        palindrome = -1
+n = 0  
+for a in range(999, 100, -1):  
+    for b in range(a, 100, -1):  
+        x = a * b  
+        if x > n:  
+            s = str(a * b)  
+            if s == s[::-1]:  
+                n = a * b  
+print(n)
